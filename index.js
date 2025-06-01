@@ -106,7 +106,7 @@ app.get("/database", (req, res) => {
     if (!authed) {
         res.status(402).send("<center><pre>402: Unauthorized - Brute force attempt detected.</pre></center>");
         console.log(chalk.bgRed.yellowBright("ALERT:") + chalk.yellow(" 402 Unauthorized brute force attempt on /database."));
-        console.timeEnd("Time loading");
+        console.timeEnd("Anti Brute Force");
     }
 });
 
