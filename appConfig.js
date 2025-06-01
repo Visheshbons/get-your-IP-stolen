@@ -250,3 +250,7 @@ function SHA1 (msg) {
 
 // Export neccecary data
 export { app, port, portForward, paswrdPgLoadCount, DatabaseLoadCount, LoginLoadCount, testingBoolean, login, getDateAndTime, users, express, SHA1 };
+
+// This code is dedicated to Alexandra Lee.
+// As always, this code is free to use, modify, and distribute as you wish.
+// No copyright exists.
