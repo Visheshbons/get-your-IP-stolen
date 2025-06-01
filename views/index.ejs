@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SHA1 Password Verification</title>
+</head>
+<body>
+
+    <%- include('header') %>
+    
+    <main>
+        <h1>Password Verification Security Protocol Demonstration With SHA1 Hashing</h1>
+        <p>This demonstration showcases the secure password verification protocol using the SHA1 hashing algorithm.</p>
+        <p>Try and penetrate into the data structure!</p>
+        <article>
+            <form action="/login" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </article>
+    </main>
+
+    <main>
+        <p>By attempting this <strong>data attack</strong>, you hereby consent to cookies being stored on your device.</p>
+        <p>For legal reasons, I hereby state that you are permitted to attempt this attack.</p>
+    </main>
+
+    <%- include('footer') %>
+
+</body>
+</html>
