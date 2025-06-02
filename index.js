@@ -70,32 +70,13 @@ app.get("/database", (req, res) => {
     users.forEach((_user, index) => {
         if (req.cookies.username == _user.user) {
             authed = true;
-            res.status(200).json([
-                {
-                    username: 'Demo User 1',
-                    email: 'demo1@example.com',
-                    age: 25,
-                    country: 'USA',
-                    lastLogin: '2023-10-01',
-                    status: 'active'
-                },
-                {
-                    username: 'Demo User 2',
-                    email: 'demo2@example.com',
-                    age: 30,
-                    country: 'Canada',
-                    lastLogin: '2023-09-30',
-                    status: 'inactive'
-                },
-                {
-                    username: 'Demo User 3',
-                    email: 'demo3@example.com',
-                    age: 28,
-                    country: 'UK',
-                    lastLogin: '2023-09-29',
-                    status: 'active'
+            res.status(200).json({
+                youShouldNotBeHere: {
+                    reward: "You beat my system. Few will. Fewer will admit it.",
+                    instructions: "Send me your write-up. The cleaner your exploit, the more I'll respect you.",
+                    contact: "vishesh.kudva@outlook.com"
                 }
-            ]);
+            });
             console.log(`Database loaded. (${DatabaseLoadCount})`);
             console.log(chalk.italic(getDateAndTime()));
             console.log("");
